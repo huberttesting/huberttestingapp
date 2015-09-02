@@ -4,7 +4,7 @@ Hubert Testing
 ### :necktie: Associations:
 
 - [x] Markdown
-- [ ] belongs_to
+- [x] belongs_to
 - [ ] has_one
 - [ ] has_many
 - [ ] has_many :through
