@@ -5,7 +5,7 @@ Hubert Testing
 
 - [x] Markdown
 - [x] belongs_to
-- [ ] has_one
+- [x] has_one
 - [ ] has_many
 - [ ] has_many :through
 - [ ] has_one :through
