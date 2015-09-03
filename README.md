@@ -10,7 +10,7 @@ Hubert Testing
 - [x] has_many :through
 - [x] has_one :through
 - [x] has_and_belongs_to_many
-- [ ] has_and_belongs_to_many vs has_many :through
+- [x] has_and_belongs_to_many vs has_many :through
 
 ---
 
