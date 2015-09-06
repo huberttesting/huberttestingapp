@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150906145444) do
+ActiveRecord::Schema.define(version: 20150906150240) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -28,12 +28,9 @@ ActiveRecord::Schema.define(version: 20150906145444) do
 
   create_table "companies", force: :cascade do |t|
     t.string   "name"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
-    t.integer  "employee_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
-
-  add_index "companies", ["employee_id"], name: "index_companies_on_employee_id", using: :btree
 
   create_table "companies_employees", force: :cascade do |t|
     t.integer "company_id"
@@ -144,9 +141,10 @@ ActiveRecord::Schema.define(version: 20150906145444) do
     t.datetime "updated_at", null: false
   end
 
-  add_foreign_key "companies", "employees"
   add_foreign_key "companies_employees", "companies"
   add_foreign_key "companies_employees", "employees"
+  add_foreign_key "customers_videos", "customers"
+  add_foreign_key "customers_videos", "videos"
   add_foreign_key "payment_histories", "payments"
   add_foreign_key "payments", "clients"
   add_foreign_key "sports", "players"
